@@ -4,13 +4,13 @@ metadata:
   name: prometheus
   namespace: argocd
   finalizers:
-    - resources-finalizer.argocd.argoproj.io
+  - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   source:
     repoURL: https://github.com/carlosnuezm/bootcamp.git
     targetRevision: main
-    path: prometheus
+    path: monitoring/prometheus
   destination:
     server: https://kubernetes.default.svc
     namespace: monitoring
@@ -19,4 +19,4 @@ spec:
       prune: true
       selfHeal: true
     syncOptions:
-      - CreateNamespace=true
+    - CreateNamespace=true
