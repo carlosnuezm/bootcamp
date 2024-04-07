@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: https://github.com/carlosnuezm/bootcamp.git
     targetRevision: main
-    path: monitoring/kube-state-metrics-configs
+    path: monitoring/kube-state-metrics
   destination:
     server: https://kubernetes.default.svc
     namespace: kube-system
