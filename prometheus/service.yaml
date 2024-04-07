@@ -3,11 +3,14 @@ kind: Service
 metadata:
   name: prometheus-svc
   namespace: monitoring
+  annotations:
+      prometheus.io/scrape: 'true'
+      prometheus.io/port:   '9090'
 spec:
   selector: 
-    app: prometheus
+    app: prometheus-server
   type: ClusterIP  
   ports:
-    - port: 9090
+    - port: 8080
       targetPort: 9090
       protocol: TCP
