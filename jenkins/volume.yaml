@@ -30,7 +30,7 @@ spec:
         - key: kubernetes.io/hostname
           operator: In
           values:
-          - minikube-m02
+          - minikube
 
 ---
 apiVersion: v1
