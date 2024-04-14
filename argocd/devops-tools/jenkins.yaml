@@ -6,7 +6,7 @@ metadata:
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
-  project: default
+  project: devops-tools
   source:
     repoURL: https://github.com/carlosnuezm/bootcamp.git
     targetRevision: main
