@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_carlosnuezm_bootcamp_1713158273863-pr-trigger-input-set
+  identifier: Build_carlosnuezm_bootcamp_1713158273863prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_carlosnuezm_bootcamp_1713158273863
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
