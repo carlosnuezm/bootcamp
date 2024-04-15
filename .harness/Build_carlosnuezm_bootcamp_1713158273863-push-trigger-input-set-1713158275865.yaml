@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_carlosnuezm_bootcamp_1713158273863-push-trigger-input-set
+  identifier: Build_carlosnuezm_bootcamp_1713158273863pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_carlosnuezm_bootcamp_1713158273863
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
