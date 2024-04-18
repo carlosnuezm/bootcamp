@@ -28,7 +28,7 @@ spec:
               cpu: "500m"
           env:
             - name: JENKINS_URL
-              value: http://127.0.0.1:39135
+              value: http://192.168.49.2:32001
             - name: JENKINS_AGENT_NAME
               value: fixed-agent
             - name: JENKINS_SECRET
