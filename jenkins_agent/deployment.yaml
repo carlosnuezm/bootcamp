@@ -28,11 +28,11 @@ spec:
               cpu: "500m"
           env:
             - name: JENKINS_URL
-              value: http://localhost:8080
+              value: http://127.0.0.1:39135
             - name: JENKINS_AGENT_NAME
               value: fixed-agent
             - name: JENKINS_SECRET
-              value: 
+              value: 2741a69c124b7b52b1b98478863dd117f75f6d89d4f6f810b4f479a7eb0e4766
             - name: JENKINS_AGENT_WORKDIR
               value: /home/jenkins/agent
           volumeMounts:
